@@ -1,6 +1,6 @@
 @extends('layouts.main')
-
 @section('content')
+
 <main class="blog">
         <div class="container">
             <h1 class="edica-page-title" data-aos="fade-up">Blog</h1>
@@ -55,6 +55,5 @@
                 </div>
             </div>
         </div>
-
     </main>
 @endsection
