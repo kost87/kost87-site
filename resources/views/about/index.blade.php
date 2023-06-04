@@ -2,8 +2,8 @@
 @section('content')
 
 <main class="blog">
-        <div class="container">
-            <h1 class="edica-page-title" data-aos="fade-up">About me</h1>
+        <div class="container" data-aos="fade-up">
+            <h1 class="edica-page-title">About me</h1>
             <p class="text-justify">
                 Hi, my name is Konstantin Konev. I am a programmer and software developer. I was born in 1987 in St. Petersburg, Russia. 
                 I graduated from college in 2007, where I spent 3 years studying computer science and programming. Then, I started to work as an IT engineer. 
