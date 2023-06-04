@@ -17,7 +17,8 @@
     <header class="edica-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="row align-items-center">
+                <a class="navbar-brand" href="about"><img src="assets/images/logo.png" height="73">&nbsp;<b>Kost87</b> <span class="h6">Blog</span></a>
+                <!-- <div class="row align-items-center">
                     <div class="col-4">
                         <img src="{{ asset('storage/images/logo.png') }}" alt="" srcset="">
                     </div>
@@ -25,7 +26,7 @@
                         <a class="navbar-brand" href="/"><b>Konstantin Konev</b><br>
                         personal site</a>
                     </div>
-                </div>
+                </div> -->
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
