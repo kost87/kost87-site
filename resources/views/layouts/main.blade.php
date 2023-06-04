@@ -17,12 +17,23 @@
     <header class="edica-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">Konstantin Konev personal site </a>
+                <div class="row align-items-center">
+                    <div class="col-4">
+                        <img src="{{ asset('storage/images/logo.png') }}" alt="" srcset="">
+                    </div>
+                    <div class="col-2">
+                        <a class="navbar-brand" href="/"><b>Konstantin Konev</b><br>
+                        personal site</a>
+                    </div>
+                </div>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="edicaMainNav">
                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('about.index') }}">About me<span class="sr-only">(current)</span></a>
+                        </li>
                         <li class="nav-item active">
                             <a class="nav-link" href="{{ route('main.index') }}">Blog<span class="sr-only">(current)</span></a>
                         </li>
