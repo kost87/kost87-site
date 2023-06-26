@@ -17,7 +17,7 @@
     <header class="edica-header">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="about"><img src="assets/images/logo.png" height="73">&nbsp;<b>Kost87</b> <span class="h6">Blog</span></a>
+                <a class="navbar-brand" href="about"><img src="../assets/images/logo.png" height="73">&nbsp;<b>Kost87</b> <span class="h6">Blog</span></a>
                 <!-- <div class="row align-items-center">
                     <div class="col-4">
                         <img src="{{ asset('storage/images/logo.png') }}" alt="" srcset="">
