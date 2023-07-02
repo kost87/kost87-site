@@ -39,6 +39,9 @@
                             <a class="nav-link" href="{{ route('main.index') }}">Blog<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item active">
+                            <a class="nav-link" href="{{ route('contact.index') }}">Contact<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
                             @auth()
                                 <a class="nav-link" href="{{ route('personal.main.index') }}">Personal<span class="sr-only">(current)</span></a>
                             @endauth

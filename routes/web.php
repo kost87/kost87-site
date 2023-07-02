@@ -37,6 +37,11 @@ Route::group(['namespace' => 'Post', 'prefix' => 'posts'], function(){
 Route::group(['namespace' => 'Category', 'prefix' => 'categories'], function(){
     Route::get('/{category}', 'ShowController')->name('category.show');
 });
+//Contact routes
+Route::group(['namespace' => 'Contact'], function(){
+    Route::get('/contact', 'IndexController')->name('contact.index');
+    Route::post('/contact', 'StoreController')->name('contact.store');
+});
 //Personl routes
 Route::group(['namespace' => 'Personal', 'prefix' => 'personal', 'middleware' => ['auth', 'verified']], function(){
     Route::group(['namespace' => 'Main'], function(){
@@ -93,6 +98,11 @@ Route::group(['namespace' => 'Admin', 'prefix' => 'admin', 'middleware' => ['aut
         Route::get('/{user}/edit', 'EditController')->name('admin.user.edit');
         Route::patch('/{user}', 'UpdateController')->name('admin.user.update');
         Route::delete('/{user}', 'DeleteController')->name('admin.user.delete');
+    });
+    Route::group(['namespace' => 'Contact', 'prefix' => 'messages'], function(){
+        Route::get('/', 'IndexController')->name('admin.contact.index');
+        Route::get('/{message}', 'ShowController')->name('admin.contact.show');
+        Route::delete('/{message}', 'DeleteController')->name('admin.contact.delete');
     });
 });
 
