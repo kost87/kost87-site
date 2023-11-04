@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class SendMail extends Mailable
+class SendMail extends Mailable implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
@@ -38,7 +38,7 @@ class SendMail extends Mailable
      */
     public function build()
     {
-        return $this->subject('New message through contact form')->markdown('mail.message', ['subject'   => $this->subj,
+        return $this->subject('New message through contact form')->markdown('mail.message', ['subject'  => $this->subj,
                                                                                             'message'   => $this->message,
                                                                                             'name'      => $this->name,
                                                                                             'email'     => $this->email,

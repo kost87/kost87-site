@@ -24,7 +24,7 @@
     <section class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-6">
+          <div class="col-12">
             <div class="card">
               <div class="card-body table-responsive p-0">
               <table class="table table-hover text-nowrap">

@@ -50,7 +50,19 @@
                                         @enderror
                                     </div>
                                 </div>
-                                <button type="submit" class="btn btn-warning btn-lg" data-aos="fade-up" data-aos-delay="300">Send Message</button>
+                                <div class="row">
+                                    <div class="form-group col-12" data-aos="fade-up" data-aos-delay="200">
+                                        <div class="g-recaptcha" data-sitekey="6LdtGvIoAAAAANxZ3-rpseqzMew7q5ZnCqe5T4u2"></div>
+                                        @error('g-recaptcha-response')
+                                            <div class="text-danger">{{ $message }}</div>
+                                        @enderror
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-12" data-aos="fade-up" data-aos-delay="200">
+                                        <button type="submit" class="btn btn-warning btn-lg" data-aos="fade-up" data-aos-delay="300">Send Message</button>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                         <div class="col-md-4 contact-sidebar" data-aos="fade-left">
